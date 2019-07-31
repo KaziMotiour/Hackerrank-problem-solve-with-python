@@ -1,12 +1,14 @@
 def minion_game(s):
-    s, v = s, 'AEIOU'
+    s = s
+    v = 'AEIOU'
     stuart, kevin, ln = 0, 0, len(s)
-
     for i in range(ln):
+        print(i)
         if s[i] in v:
             kevin += ln - i
         else:
             stuart += ln - i
+            print(ln-i)
 
     if stuart > kevin:
         print('Stuart ', stuart)
