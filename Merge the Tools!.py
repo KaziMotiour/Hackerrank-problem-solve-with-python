@@ -9,14 +9,20 @@ def merge_the_tools(string, k):
         j += k
     j = 0
     s = ''
-    for i in range(len(subString)):
+    i=0
+    def rec(i,j,s):
         for k in subString[j]:
             if k not in s:
                 s+=k
-
+        i+=1
         j += 1
         print(s)
         s = ''
+        if i == len(subString):
+            exit()
+        else:
+            rec(i,j,s)
+    rec(i,j,s)
 
 
 if __name__ == '__main__':
