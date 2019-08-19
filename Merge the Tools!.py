@@ -10,6 +10,19 @@ def merge_the_tools(string, k):
     j = 0
     s = ''
     i=0
+    # def rec(i,j,s):
+    #     for k in subString[j]:
+    #         if k not in s:
+    #             s+=k
+    #     i+=1
+    #     j += 1
+    #     print(s)
+    #     s = ''
+    #     if i == len(subString):
+    #         exit()
+    #     else:
+    #         rec(i,j,s)
+    # rec(i,j,s)
     def rec(i,j,s):
         for k in subString[j]:
             if k not in s:
