@@ -23,7 +23,7 @@ def merge_the_tools(string, k):
     #     else:
     #         rec(i,j,s)
     # rec(i,j,s)
-    def rec(i,j,s):
+    def rec(i,j,s ):
         for k in subString[j]:
             if k not in s:
                 s+=k
