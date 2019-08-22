@@ -1,12 +1,18 @@
-from itertools import product
-a = map(int, (input()).split(" "))
-b = map(int, (input()).split(" "))
-print(c,d)
-List = list(product(a, b))
-[print(i, end='') for i in List]
+# from itertools import product
+# a,b= [(int(i) for i in list(input())) for _ in range(2)]
+#b = [int(i) for i in list(input())]
+#List = list(product(a, b))
+# [print(i, end='') for i in product(a,b)]
+#print(list(product(a,b)))
 
-
-x='12'
-a=list(x)
-b=[map(int,i) for i in a]
-print(b)
+# x = '12'
+# a = list(x)
+# b =[int(i) for i in list(input())]
+# print(b)
+# from itertools import product
+# a,b= [(int(i) for i in input().split()) for _ in range(2)]
+# [print(i, end='') for i in list(product(a, b))]
+# print('\n')
+# print(*product(a, b))
+list=[1,2,3]
+print(*list)
