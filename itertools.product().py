@@ -16,5 +16,5 @@
 # print('\n')
 # print(*product(a, b))
 
-# List = [1, 2, 3]
-# print(*List)
+List = [1, 2, 3]
+print(*List)
