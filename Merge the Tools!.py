@@ -1,4 +1,6 @@
 import math
+import time
+
 def merge_the_tools(string, k):
     subString = []
     j, l = 0, k
@@ -38,6 +40,9 @@ def merge_the_tools(string, k):
     rec(i,j,s)
 
 
+
 if __name__ == '__main__':
+    print(time.ctime())
     string, k = input(), int(input())
     merge_the_tools(string, k)
+    print(time.ctime())
