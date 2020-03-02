@@ -1,11 +1,12 @@
 # this function use to print dictionary data using list comprehension
 # dic={}
-dis={}
+dic={}
 for i in range(int(input())):
-    kay,*value=input().split()
-    data=list(value)
-    dis[kay]=data
-[print(k,":",v) for k,v in dis.items()]
+    key, *value=input().split()
+    dic[key]=list(map(float,value))
+numbers = dic[input()]
+print("{0:.2f}".format(sum(numbers)/len(numbers)))
+
 
 # d={input(): list(map(float,input().split())) for _ in  range(int(input()))}
 # print(d)
